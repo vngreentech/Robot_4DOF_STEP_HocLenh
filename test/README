@@ -1,0 +1,152 @@
+
+
+#define X_STEP_PIN         54
+#define X_DIR_PIN          55
+#define X_ENABLE_PIN       38
+
+#define Y_STEP_PIN         60
+#define Y_DIR_PIN          61
+#define Y_ENABLE_PIN       56
+
+#define Z_STEP_PIN         46
+#define Z_DIR_PIN          48
+#define Z_ENABLE_PIN       62
+
+Servo: D4
+
+END_STOP: 
+    X-: 3
+    Y-: 14
+    Z-: 18
+
+
+Chieu quay:
+    X: + -> END_STOP
+    Y: + -> END_STOP
+    Z: - -> END_STOP
+
+Servo kep: 
+    0 - MO 
+    180 - KEP
+
+Bien tro:
+    X - A3
+    Y - A4 
+    Z - A5
+
+    Nut nhan: A10 - Servo
+    Nut nhan: 23
+    Nut len: 17
+    Nut xuong: 16
+
+TINH TI LENH TRUYEN:
+   Banh rang ROBOT: 90
+   Banh rang Puly: 20
+   -> ti le truyen 4.5/1 ; puly quay 4.5 vong = robot 1 vong
+
+
+PHAM VI HOAT DONG:
+    X: 0 -> -500
+    Y: 0 -> -300
+    Z: 0 -> 250
+
+VI TRI DEMO:
+
+    1:  X: -235
+        Y: -171
+        Z: 142
+        KEP: Mo
+        
+    2:  X: -348
+        Y: -171
+        Z: 142
+        KEP: Mo  
+
+    3:  X: -348
+        Y: -294
+        Z: 228
+        KEP: Kep 
+
+    4:  X: -348
+        Y: -153
+        Z: 112
+        KEP: Kep   
+
+    5:  X: -450
+        Y: -153
+        Z: 112
+        KEP: Kep 
+
+    6:  X: -450
+        Y: -300
+        Z: 216
+        KEP: Mo
+    
+    7:  X: -216
+        Y: -147
+        Z: 101
+        KEP: Mo
+
+    8:  X: -56
+        Y: -289
+        Z: 229
+        KEP: Kep
+
+    9:  X: -259
+        Y: -164
+        Z: 122
+        KEP: Kep
+
+    10:  X: -259
+        Y: -295
+        Z: 234
+        KEP: Mo
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+KIẾN THỨC SỬ DỤNG:
+
+- Lập trình đọc ghi EEPROM
+- Lập trình màn hình LCD 2004
+- Lập trình Menu sử dụng 3 nút nhấn
+- Điều khiển động cơ bước sử dụng thư viện
+- Sử dụng Struct trong lập trình nhúng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
